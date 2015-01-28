@@ -6,15 +6,16 @@
 	method="upgrade">
 	<name>aTeam</name>
 	<author>ThemeXpert</author>
-	<creationDate>##DATE##</creationDate>
-	<copyright>Copyright (C) 2011 - 2014 ThemeXpert. All rights reserved.</copyright>
+	<creationDate>28/01/2015</creationDate>
+	<copyright>Copyright (C) 2011 - 2015 ThemeXpert. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>support@themexpert.com</authorEmail>
 	<authorUrl>www.themexpert.com</authorUrl>
-	<version>##VERSION##</version>
+	<version>1.0</version>
 	<description>The A Team module by ThemeXpert</description>
 	<files>
 		<filename module="mod_ateam">mod_ateam.php</filename>
+		<folder>assets</folder>
 		<folder>tmpl</folder>
 		<folder>fields</folder>
 		<filename>helper.php</filename>
