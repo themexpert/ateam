@@ -20,4 +20,8 @@
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.pkg_ateam.sys.ini</language>
 	</languages>
+	<!-- UPDATESERVER DEFINITION -->
+	  <updateservers>
+	          <server type="extension" priority="1" name="Xpert Google Map Module">https://raw.githubusercontent.com/themexpert/ateam/master/mainfest.xml</server>
+	  </updateservers>
 </extension>
