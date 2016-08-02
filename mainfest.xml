@@ -9,7 +9,7 @@
                 <client>site</client>
                 <infourl title="aTeam Update">https://github.com/themexpert/aTeam/releases/tag/1.0.0</infourl>
                 <downloads>
-                        <downloadurl type="full" format="zip">https://github.com/themexpert/aTeam/releases/download/1.0.0/mod_tx_google_map_1.0.0.zip</downloadurl>
+                        <downloadurl type="full" format="zip">https://github.com/themexpert/aTeam/releases/download/1.0.0/pkg_ateam-1.0.0.zip</downloadurl>
                 </downloads>
                 <tags>
                         <tag>1.0.0</tag>
