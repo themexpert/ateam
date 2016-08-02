@@ -1,0 +1,9 @@
+{
+	"plugins" : {
+		"ajax"	: ["ateam"]
+	},
+	"modules"   : {
+		"frontend" : ["ateam"]
+	},
+	"packages"  : ["ateam"]
+}

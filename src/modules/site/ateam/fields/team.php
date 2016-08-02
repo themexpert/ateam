@@ -21,22 +21,29 @@ class JFormFieldTeam extends JFormField{
 
     protected function getInput()
     {
-        $existingItems = ( !empty($this->value) )? count($this->value) : 0;
-        $ajaxUrl = JUri::root() . 'index.php?option=com_ajax&module=ateam&format=raw&method=getFormData';
+        $app = JFactory::getApplication();
+        if($app->isSite()){
+          $adminyes = false;
+        }else{
+          $adminyes = true;
+        }
+        $existingItems = ( !empty($this->value) )? count($this->value) : 1;
+        $ajaxUrl = JUri::root() . 'index.php?option=com_ajax&plugin=ateam&format=raw';
 
         $js = ' var itemId = 0 + ' . $existingItems . ',
                 ajaxUrl = "'. $ajaxUrl .'",
+                adminyes = "'. $adminyes .'",
                 name = "'. $this->name .'";';
 
         // Include module helper
-        include_once JPATH_SITE . '/modules/mod_ateam/helper.php';
+        include_once JPATH_SITE . '/plugins/ajax/ateam/ateam.php';
 
         // Add new button
         $html[] = '<div class="clearfix"><a href="#" class="btn btn-success action-new">+ Add New</a></div>';
         // Start accordion
         $html[] = JHtmlBootstrap::startAccordion('repeatable', array('active'=>'slide-1'));
         // Get Form from data
-        $html[] = modAteamHelper::buildForm( $this->name, $this->value, 1 );
+        $html[] = PlgAjaxATeam::buildForm( $this->name, $this->value, 1 );
         // End accordion
         $html[] = JHtmlBootstrap::endAccordion();
 

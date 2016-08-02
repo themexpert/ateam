@@ -188,11 +188,16 @@ class JFormFieldImagePicker extends JFormField
 								$value = JFile::stripExt($file);
 								$text = $lang->hasKey($key = strtoupper('TPL_' . $template->element . '_' . $module . '_LAYOUT_' . $value))
 									? JText::_($key) : $value;
-								
-								$image_path = JURI::root(TRUE) . '/templates/' . $template->element . '/html/' . $module . '/' . $value . '.png';
-								if( !file_exists($image_path) )
+
+								$image_path = '/templates/' . $template->element . '/html/' . $module . '/' . $value . '.png';
+
+								if( !file_exists(JPATH_SITE . $image_path) )
 								{
 									$image_path = JURI::root(TRUE) . '/libraries/xef/assets/images/imagepicker_layout_not_found.png';
+								}
+								else
+								{
+									$image_path = JURI::root(TRUE) . $image_path;
 								}
 
 								$data[] = array(
@@ -223,7 +228,7 @@ class JFormFieldImagePicker extends JFormField
 
 			$html = JHtmlSelect::genericlist($data, $this->name , $options);
 
-			return $html; 
+			return $html;
 		}
 		else
 		{

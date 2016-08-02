@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>PKG_ATEAM</name>
+    <author>ThemeXpert</author>
+    <authorEmail>info@themexpert.com</authorEmail>
+    <authorUrl>www.themexpert.com</authorUrl>
+	<creationDate>1 Aug 2016</creationDate>
+	<packager>ThemeXpert</packager>
+	<packagename>ateam</packagename>
+	<packagerurl>https://www.themexpert.com</packagerurl>
+	<version>1.0.0</version>
+	<description>PKG_ATEAM_XML_DESCRIPTION</description>
+	<!-- Extension to install -->
+	<files folder="src">
+		<!-- Modules -->
+   		<file type="module" id="mod_ateam" client="site">modules/site/ateam</file>
+		<!-- Plugins -->
+		<file type="plugin" id="plg_ateam" group="ajax">plugins/ajax/ateam</file>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.pkg_ateam.sys.ini</language>
+	</languages>
+</extension>

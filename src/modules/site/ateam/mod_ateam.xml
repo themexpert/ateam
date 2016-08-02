@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>aTeam</name>
+	<author>ThemeXpert</author>
+	<creationDate>28/01/2015</creationDate>
+	<copyright>Copyright (C) 2011 - 2015 ThemeXpert. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@themexpert.com</authorEmail>
+	<authorUrl>www.themexpert.com</authorUrl>
+	<version>1.0</version>
+	<description>The A Team module by ThemeXpert</description>
+	<files>
+		<filename module="mod_ateam">mod_ateam.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<folder>fields</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_ateam.xml</filename>
+	</files>
+
+    <languages folder="language">
+         <language tag="en-GB">en-GB.mod_ateam.ini</language>
+    </languages>
+
+	<!-- UPDATESERVER DEFINITION -->
+    <updateservers>
+        <server type="extension" priority="1" name="A Team Update">http://www.themexpert.com/ustreams/extensions/ateam.xml</server>
+    </updateservers>
+
+	<config>
+		<fields name="params" addfieldpath="modules/mod_ateam/fields">
+			<fieldset name="basic">
+				<field name="teams" type="team" label="Teams" description="" />
+			</fieldset>
+      <fieldset name="styles">
+          <field name="layout" type="imagepicker" label="LAYOUT_LABEL" description="LAYOUT_DESC" />
+          <field name="grid_cols" type="list" default="4" label="LAYOUT_GRID_COLS_LABEL" description="LAYOUT_GRID_COLS_DESC">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </field>
+          <field name="image_style" type="list" default="square" label="IMAGE_STYLE" description="IMAGE_STYLE_DESC">
+              <option value="square">SQUARE</option>
+              <option value="circle">CIRCLE</option>
+          </field>
+      </fieldset>
+			<fieldset
+				name="advanced">
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

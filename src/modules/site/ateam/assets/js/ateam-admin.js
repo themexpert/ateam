@@ -1,7 +1,10 @@
 (function($){
+    function openImageModal(id){
+      //index.php?option=com_media&amp;view=images&amp;tmpl=component&amp;fieldid=ateam_images_'.$itemId.'
 
+    }
     $(document).ready(function(){
-
+      // console.log(ajaxUrl);
         // Add new form from given ajax url
         $(".action-new").on("click", function(e){
             itemId++;
@@ -9,7 +12,7 @@
 
             $.ajax({
                   url: ajaxUrl,
-                  data: { name: name, itemId: itemId }
+                  data: { name: name, itemId: itemId, adminyes: adminyes }
                 }).done(function( msg ) {
                     $("#repeatable").append(msg);
             });

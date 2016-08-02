@@ -22,7 +22,7 @@ $i = 0;
             <li>
                 <div class="at-inner">
                     <?php if( !empty($team->image) ): ?>
-                        <img class="<?php echo $params->get('image_style')?>" src="<?php echo $team->image ;?>" alt="<?php echo $team->name; ?>">
+                        <img class="<?php echo $params->get('image_style')?> img-responsive" src="<?php echo $team->image ;?>" alt="<?php echo $team->name; ?>">
                     <?php endif;?>
                     <h3 class="at-name"><?php echo $team->name; ?></h3>
                     <h4 class="at-designation"><?php echo $team->designation; ?></h4>
