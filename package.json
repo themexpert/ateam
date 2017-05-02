@@ -1,6 +1,6 @@
 {
   "name": "pkg_ateam",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Joomla module to create and show team member info",
   "main": "gulpfile.js",
   "directories": {

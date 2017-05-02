@@ -8,7 +8,7 @@
 	<packager>ThemeXpert</packager>
 	<packagename>ateam</packagename>
 	<packagerurl>https://www.themexpert.com</packagerurl>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>PKG_ATEAM_XML_DESCRIPTION</description>
 	<!-- Extension to install -->
 	<files folder="src">
