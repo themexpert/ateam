@@ -9,6 +9,8 @@
 	<authorUrl>www.themexpert.com</authorUrl>
 	<version>1.0.0</version>
 	<description>aTeam Plugin for Ajax Operation</description>
+	<scriptfile>script.php</scriptfile>
+
 	<files>
 		<filename plugin="ateam">ateam.php</filename>
 	</files>

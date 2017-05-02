@@ -22,6 +22,6 @@
 	</languages>
 	<!-- UPDATESERVER DEFINITION -->
 	  <updateservers>
-	          <server type="extension" priority="1" name="Xpert Google Map Module">https://raw.githubusercontent.com/themexpert/ateam/master/mainfest.xml</server>
+	          <server type="extension" priority="1" name="aTeam - Joomla team module">https://raw.githubusercontent.com/themexpert/ateam/master/mainfest.xml</server>
 	  </updateservers>
 </extension>
