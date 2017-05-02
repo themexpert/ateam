@@ -12,7 +12,7 @@
 	<authorEmail>support@themexpert.com</authorEmail>
 	<authorUrl>www.themexpert.com</authorUrl>
 	<version>1.0</version>
-	<description>The A Team module by ThemeXpert</description>
+	<description>Xpert Team - The Team module by ThemeXpert</description>
 	<files>
 		<filename module="mod_ateam">mod_ateam.php</filename>
 		<folder>assets</folder>
