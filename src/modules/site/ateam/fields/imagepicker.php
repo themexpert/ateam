@@ -121,7 +121,7 @@ class JFormFieldImagePicker extends JFormField
 			// Check for a database error.
 			if ($db->getErrorNum())
 			{
-				JError::raiseWarning(500, $db->getErrorMsg());
+				JFactory::getApplication()->enqueueMessage($db->getErrorMsg(), 'error');
 			}
 
 			// Build the search paths for module layouts.

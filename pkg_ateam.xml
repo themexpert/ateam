@@ -10,6 +10,7 @@
 	<packagerurl>https://www.themexpert.com</packagerurl>
 	<version>1.1.0</version>
 	<description>PKG_ATEAM_XML_DESCRIPTION</description>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<!-- Extension to install -->
 	<files folder="src">
 		<!-- Modules -->
